@@ -1,0 +1,142 @@
+{
+  "id": "c0e87d6b-b841-4875-bb17-623ba13a0303",
+  "version": "2.0",
+  "name": "TestArtworkPricingFormula2",
+  "url": "https://www.artismycareer.com",
+  "tests": [{
+    "id": "ee0f9621-3d44-49ca-8c6f-11f6ee9f2fee",
+    "name": "TestArtworkPricingFormula2",
+    "commands": [{
+      "id": "40e818d6-7613-4bd2-8cd0-3619d29f783d",
+      "comment": "",
+      "command": "open",
+      "target": "/pricing-calculator/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0133809c-d7a4-41a4-8207-c90b9c084c68",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1486x794",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "478ab1bb-cbf8-4504-b0f1-844d08b84dc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.camper1CalculatorRightContainer > .camper1CalculatorItemContainer:nth-child(2)",
+      "targets": [
+        ["css=.camper1CalculatorRightContainer > .camper1CalculatorItemContainer:nth-child(2)", "css:finder"],
+        ["xpath=//div[4]/div/div/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8f4a3ab-7aa9-4f18-8df4-da287742acf2",
+      "comment": "",
+      "command": "click",
+      "target": "id=wage",
+      "targets": [
+        ["id=wage", "id"],
+        ["css=#wage", "css:finder"],
+        ["xpath=//input[@id='wage']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/div/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b940a67e-9a91-4178-87a5-d61afd9e98d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=wage",
+      "targets": [
+        ["id=wage", "id"],
+        ["css=#wage", "css:finder"],
+        ["xpath=//input[@id='wage']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/div/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "9"
+    }, {
+      "id": "c0ba23dd-9f23-473a-b40d-5b8d141835cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=time",
+      "targets": [
+        ["id=time", "id"],
+        ["css=#time", "css:finder"],
+        ["xpath=//input[@id='time']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/div/div/div[2]/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf909c0b-fd39-4ef6-831d-e493f138a1f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=time",
+      "targets": [
+        ["id=time", "id"],
+        ["css=#time", "css:finder"],
+        ["xpath=//input[@id='time']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/div/div/div[2]/div[3]/input", "xpath:position"]
+      ],
+      "value": "48"
+    }, {
+      "id": "ad008170-8a02-43f3-bdb6-6704b300272f",
+      "comment": "",
+      "command": "click",
+      "target": "id=acost",
+      "targets": [
+        ["id=acost", "id"],
+        ["css=#acost", "css:finder"],
+        ["xpath=//input[@id='acost']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/div/div/div[2]/div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4366dc9b-ecc0-4061-801c-0c82a9dc41b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=acost",
+      "targets": [
+        ["id=acost", "id"],
+        ["css=#acost", "css:finder"],
+        ["xpath=//input[@id='acost']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/div/div/div[2]/div[4]/input", "xpath:position"]
+      ],
+      "value": "56"
+    }, {
+      "id": "8874d696-144c-45f6-9ac1-0505f0f40cec",
+      "comment": "",
+      "command": "click",
+      "target": "id=cb",
+      "targets": [
+        ["id=cb", "id"],
+        ["css=#cb", "css:finder"],
+        ["xpath=//button[@id='cb']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/div/div/div[2]/div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd3ef8b0-d8c8-4827-b60e-cea0ba9f0bbe",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=c2",
+      "targets": [
+        ["id=c2", "id"],
+        ["css=#c2", "css:finder"],
+        ["xpath=//p[@id='c2']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/div/div/div[2]/div[5]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'£976')]", "xpath:innerText"]
+      ],
+      "value": "£976"
+    }]
+  }],
+  "suites": [{
+    "id": "9860d2d3-f590-4b06-804b-586c9c5e2fd9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ee0f9621-3d44-49ca-8c6f-11f6ee9f2fee"]
+  }],
+  "urls": ["https://www.artismycareer.com/"],
+  "plugins": []
+}

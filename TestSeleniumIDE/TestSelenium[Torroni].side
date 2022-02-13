@@ -1,0 +1,131 @@
+{
+  "id": "0713c0d0-50e5-42b4-af02-7762d369c7c8",
+  "version": "2.0",
+  "name": "TestSelenium",
+  "url": "https://www.google.it",
+  "tests": [{
+    "id": "33caf3ad-7919-4a93-9d47-17de449c1a7a",
+    "name": "TestSeleniumIde",
+    "commands": [{
+      "id": "ba23f0db-9c06-4c83-b069-f68eeaab87c7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bbdbf27-2cca-43f6-9cb2-d7ccdb718736",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "652x752",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01b0eb7b-fa32-4bc9-b884-f35dfdec84b5",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "francesco totti"
+    }, {
+      "id": "574d6cdb-bd06-463f-b9c4-b476781386c6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "022b99db-5f41-4ac4-a16d-713b5535094c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,44)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7704f8b-57e6-403c-b594-857c47ad2a44",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .tF2Cxc > .yuRUbf .LC20lb",
+      "targets": [
+        ["css=div:nth-child(2) > .tF2Cxc > .yuRUbf .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Francesco Totti - Wikipedia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4f93b71-1dff-4575-aa5b-30e01f739716",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(15) > td:nth-child(2) > a:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(15) > td:nth-child(2) > a:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Roma')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/table/tbody/tr[15]/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/wiki/Associazione_Sportiva_Roma')])[2]", "xpath:href"],
+        ["xpath=//tr[15]/td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "592c414f-79b9-4f89-bedc-01606705d6b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tocsection-6 .toctext",
+      "targets": [
+        ["css=.tocsection-6 .toctext", "css:finder"],
+        ["xpath=//div[@id='toc']/ul/li[3]/ul/li[2]/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/ul/li/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Stemma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "895c26e7-10e3-4cec-b963-5902e34c2f77",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(45) > a:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(45) > a:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Antonello Venditti')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/p[22]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/wiki/Antonello_Venditti')])[2]", "xpath:href"],
+        ["xpath=//p[22]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "345ece5f-3f20-45be-8489-e32c3aa4cd03",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Italia",
+      "targets": [
+        ["linkText=Italia", "linkText"],
+        ["css=tr:nth-child(4) > td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Italia')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/table/tbody/tr[4]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Italia')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Italia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e8fc4121-9f28-4ca9-920a-a226c308546e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["33caf3ad-7919-4a93-9d47-17de449c1a7a"]
+  }],
+  "urls": ["https://www.google.it/"],
+  "plugins": []
+}
